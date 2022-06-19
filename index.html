@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Heaven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Gideon+Roman&family=Hurricane&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/iconVegan.png">
+
+</head>
+
+<body onload="renderDishes()">
+
+    <div class="header"><a href="index.html"><img class="headerLogo" src="img/VeganHeaven.png"></a><img
+            class="headerImg" src="img/salad.jpg" alt="">
+        <a href="tel:0676895681137" class="number">+43 676 895681 137</a>
+    </div>
+    <div id="responsiveBasket" class="d-none">
+        <div class="borderBasketResponsive">
+            <img class="backToMenu" onclick="backToMenu()" src="img/back.png" alt="">
+            <div class="basketResponsiveTop">
+                Warenkorb
+            </div>
+            <div class="emptyBasket" id="emptyBasketResponsive">Dein Warenkorb ist leer, füge deine Lieblingsspeise hinzu!</div>
+                <div><img class="basketImg" id="basketImgResponsive" src="img/basket.png" alt=""></div>
+            <div id="basketItemsResponsive"></div>
+            <div class="priceBasket" id="priceBasketResponsive">
+
+                <div class="subtotal">
+                    <div>Zwischensumme</div>
+                    <div id="subtotal">0 €</div>
+                </div>
+                <div class="deliveryCosts">
+                    <div>Liferkosten</div>
+                    <div id="costs">4,90 €</div>
+                </div>
+                <div class="sum">
+                    <div><b>Gesamt</b></div>
+                    <div id="sum">0 €</div>
+                </div>
+                <a id="payBtnResponsive" href="success.html">
+                    Bezahlen
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+
+        <div class="menu-category">
+            <a class="bg1" href="#" onclick="renderDishes()">Alle</a>
+            <a class="bg2" href="#" onclick="showPizza()">Pizza</a>
+            <a class="bg1" href="#" onclick="showBowls()">Bowls</a>
+            <a class="bg2" href="#" onclick="showBurger()">Burger</a>
+            <a class="bg1" href="#" onclick="showDessert()">Desserts</a>
+        </div>
+        <div class="basketRight">
+            <div class="basket" id="basket">
+                <h5>Warenkorb</h5>
+                <div class="emptyBasket" id="emptyBasket">Dein Warenkorb ist leer, füge deine Lieblingsspeise hinzu!</div>
+                <div><img class="basketImg" id="basketImg" src="img/basket.png" alt=""></div>
+                <div id="basketItems"></div>
+                <div class="priceBasket" id="priceBasket">
+                    <div class="subtotal">
+                        <div>Zwischensumme</div>
+                        <div id="subtotalResponsive">0 €</div>
+                    </div>
+                    <div class="deliveryCosts">
+                        <div>Liferkosten</div>
+                        <div id="costsResponsive">4,90 €</div>
+                    </div>
+                    <div class="sum">
+                        <div><b>Gesamt</b></div>
+                        <div id="sumResponsive">0 €</div>
+                    </div>
+                </div>
+                <a class="payBtn" id="payBtn" href="success.html">
+                    Bezahlen
+                </a>
+            </div>
+        </div>
+        <div class="menu" id="menu"></div>
+        <div class="openBasket" onclick="openBasket()">
+            Warenkorb
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <a href="index.html"><img class="footerLogo" src="img/VeganHeaven.png" alt=""></a>
+        </div>
+        <div class="footerLinks">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
